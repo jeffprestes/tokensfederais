@@ -11,5 +11,6 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
 
-npx hardhat run scripts/deploy-erc20.js --network alfajores
+npx hardhat run scripts/deploy-fundo.js --network alfajores
+npx hardhat verify 0x9FD8D0b3B10E3D80a0F95e9Db122ba4316D70A81 --contract contracts/fundospuppp_flat.sol:FundoSPUPPP --network alfajores
 ```

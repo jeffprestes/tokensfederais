@@ -15,6 +15,9 @@ async function main() {
   const Token = await ethers.getContractFactory("contracts/fundospuppp_flat.sol:FundoSPUPPP");
   const token = await Token.deploy();
   console.log("Token address:", token.address);
+  const NFT = await ethers.getContractFactory("contracts/imovelrfb.sol:ImoveisRFB");
+  const nft = await NFT.deploy();
+  console.log("NFT address:", nft.address); 
 }
 
 main()

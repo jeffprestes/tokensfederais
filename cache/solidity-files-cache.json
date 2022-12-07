@@ -913,8 +913,8 @@
       ]
     },
     "/Users/jeffprestes/projetos/go/src/github.com/jeffprestes/tokensfederais/contracts/imovelrfb.sol": {
-      "lastModificationDate": 1670421303474,
-      "contentHash": "e20af11ffe37cec719ac7e41189bcd8a",
+      "lastModificationDate": 1670450369610,
+      "contentHash": "6bee901e89a0efc905c59cc38ed41965",
       "sourceName": "contracts/imovelrfb.sol",
       "solcConfig": {
         "version": "0.8.17",
