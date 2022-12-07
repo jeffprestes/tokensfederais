@@ -22,7 +22,7 @@ contract ImoveisRFB is
     constructor() ERC721("ImoveisRFB", "IRFB") {}
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://jeffprestes.github.io/nft/";
+        return "https://jeffprestes.github.io/tokensfederais/nft/";
     }
 
     function safeMint(address to, string memory uri) public onlyOwner {
