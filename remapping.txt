@@ -1,0 +1,7 @@
+forge-std/=smartcontracts/lib/forge-std/src/
+
+ds-test/=smartcontracts/lib/forge-std/lib/ds-test/src/
+
+@solmate/=smartcontracts/lib/solmate/src
+
+@openzeppelin/=smartcontracts/lib/openzeppelin-contracts
