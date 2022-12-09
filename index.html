@@ -13,31 +13,79 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat" />
     <style>
       body {
         color: whitesmoke;
+        background-color: darkblue;
       }
       footer {
         text-align: center;
         font-size: small;
         font-style: italic;
+        padding-top: 2%;
       }
-      a,
-      a:hover {
-        text-decoration: none;
+      a {
         color: whitesmoke;
+        text-decoration: underline;
+      }
+      a:hover {
+        color: whitesmoke;
+        font-size: xx-large;
+        font-weight: bold;
+      }
+      h3 {
+        margin-top: 3%;
+        font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: xx-large;
+      }
+      p,
+      ul {
+        font-family: "Titillium Web", Arial, Helvetica, sans-serif;
+        font-size: x-large;
+      }
+      h1 {
+        font-family: "Caveat", Arial, Helvetica, sans-serif;
+        font-size: 700%;
+      }
+      h1,
+      h2,
+      h5 {
+        text-align: center;
+      }
+      header {
+        padding-top: 3%;
+        margin-bottom: 1%;
+      }
+      hr {
+        width: 50%;
+        border: 5px dotted;
+        border-style: none none dotted;
+        color: grey;
+      }
+      #img-candangos {
+        height: 256px;
+        width: 256px;
       }
       #container {
-        height: 800px;
+        height: 100%;
       }
     </style>
   </head>
-  <body class="bg-primary">
+  <body>
     <div id="container" class="container d-flex justify-content-center flex-column">
-      <h1>Tokens Federais</h1>
-      <h2>Hackathon SPU & Celo - 2022</h2>
-      <h5><i>Por Aline Cruvinel e Jeff Prestes</i></h5>
+      <header class="d-flex justify-content-center">
+        <div><img id="img-candangos" src="candangos.png" alt="A união faz a força" /></div>
+        <div class="d-flex justify-content-center flex-column">
+          <h1>Tokens Federais</h1>
+          <h2>Hackathon SPU & Celo - 2022</h2>
+          <h5><i>Por Aline Cruvinel e Jeff Prestes</i></h5>
+        </div>
+      </header>
       <br />
+      <h3>Motivação e Proposta</h3>
       <div>
         <p>
           A Secretaria do Patrimônio da União administra hoje mais de 700 mil imóveis por todo o Brasil. Parte desses imóveis são bens dominicais, passíveis de
@@ -105,13 +153,13 @@
         </p>
         <ul>
           <li>
-            <a href="https://alfajores.celoscan.io/token/0xa14567f7EFcb944ddC1E56BD1c09984c2F675bB8" target="_blank">
-              Contrato do Fundo SPU - PPP: https://alfajores.celoscan.io/token/0xa14567f7EFcb944ddC1E56BD1c09984c2F675bB8
+            <a href="https://alfajores.celoscan.io/address/0xa14567f7EFcb944ddC1E56BD1c09984c2F675bB8" target="_blank">
+              Contrato do Fundo SPU - PPP: https://alfajores.celoscan.io/address/0xa14567f7EFcb944ddC1E56BD1c09984c2F675bB8
             </a>
           </li>
           <li>
-            <a href="https://explorer.celo.org/alfajores/address/0xf9Ef7d659e96Eb769bB9d02C0B1C0552f7Bf9B6f" target="_blank">
-              Contrato dos Imoveis em NFT: https://explorer.celo.org/alfajores/address/0xf9Ef7d659e96Eb769bB9d02C0B1C0552f7Bf9B6f
+            <a href="https://alfajores.celoscan.io/token/0xf9Ef7d659e96Eb769bB9d02C0B1C0552f7Bf9B6f" target="_blank">
+              Contrato dos Imoveis em NFT: https://alfajores.celoscan.io/token/0xf9Ef7d659e96Eb769bB9d02C0B1C0552f7Bf9B6f
             </a>
           </li>
         </ul>
@@ -133,9 +181,10 @@
       <h3>Licença</h3>
       <div>Os artefatos produzidos para este projeto estão licenciados sob a licença <a href="https://opensource.org/licenses/MIT">MIT</a>.</div>
     </div>
-    <hr />
     <footer>
+      <hr />
       <div>Vincit omnia veritas</div>
+      <br />
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
