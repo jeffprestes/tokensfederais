@@ -17,7 +17,13 @@
       body {
         color: whitesmoke;
       }
-      a {
+      footer {
+        text-align: center;
+        font-size: small;
+        font-style: italic;
+      }
+      a,
+      a:hover {
         text-decoration: none;
         color: whitesmoke;
       }
@@ -30,16 +36,73 @@
     <div id="container" class="container d-flex justify-content-center flex-column">
       <h1>Tokens Federais</h1>
       <h2>Hackathon SPU & Celo - 2022</h2>
-      <br />
-      <h3>Endereço dos Smart Contracts</h3>
+      <h5><i>Por Aline Cruvinel e Jeff Prestes</i></h5>
       <br />
       <div>
-        <!-- Texto vai aqui. Cada paragrafo é delimitado por <p> </p> -->
-        <p>Texto do paragrafo 1</p>
-        <p>Texto do paragrado 2</p>
+        <p>
+          A Secretaria do Patrimônio da União administra hoje mais de 700 mil imóveis por todo o Brasil. Parte desses imóveis são bens dominicais, passíveis de
+          alienação ao particular.
+        </p>
+        <p>
+          Entretanto, o processo licitatório para a venda desses imóveis é lento e custoso, e enquanto a venda não ocorre, os imóveis acabam gerando despesas ao
+          invés de receita para União, tornando-se um grande problema.
+        </p>
+        <p>
+          Além disso, existe uma grande dificuldade na venda desses imóveis. O Ministério da Economia, por meio da Secretaria de Desestatização, Desinvestimento
+          e Mercados (SEDDM),
+          <a href="https://www.gov.br/economia/pt-br/acesso-a-informacao/acoes-e-programas/incorpora-brasil/apresentacao-inicial-19-jan-22.pdf">indica</a> que o
+          volume de venda dos imóveis ao particular é historicamente baixo e 90% dos leilões de imóveis da União são frustrados por motivos como burocracia ou
+          laudos de avaliação errados.
+        </p>
+        <p>
+          Pensando nisso, a Tokens Federais propõe a tokenização dos imóveis alienáveis da União e a criação de um fundo de investimento imobiliário federal,
+          visando destravar/otimizar a monetização desse patrimônio aumentando sua liquidez de forma ágil, transparente e sustentável.
+        </p>
+        <p>
+          Hoje, muito do esforço para a criação de um fundo imobiliário federal já foi feito por meio do projeto "<strong
+            ><a href="https://www.gov.br/economia/pt-br/acesso-a-informacao/acoes-e-programas/incorpora-brasil/incorpora-brasil">Incorpora Brasil</a></strong
+          >". As principais ações foram:
+        </p>
+        <ul>
+          <li>
+            Mapeamento de imóveis sujeitos à alienação publicados nas
+            <a href="https://www.gov.br/economia/pt-br/acesso-a-informacao/acoes-e-programas/incorpora-brasil/lista-de-portarias.pdf">portarias</a> da página do
+            Incorpora Brasil;
+          </li>
+          <li>
+            Levantamento de
+            <a href="https://www.gov.br/economia/pt-br/acesso-a-informacao/acoes-e-programas/incorpora-brasil/base-de-dados-dos-imoveis">base de dados</a>
+            destes imóveis;
+          </li>
+          <li>
+            Autorização legal através da <a href="https://www.in.gov.br/en/web/dou/-/lei-n-14.011-de-10-de-junho-de-2020-261279450">lei 14.011/20</a> (conversão
+            da MP 915/19) que previu a possibilidade de constituição de fundos de investimento imobiliário e contratação de seus gestores e administradores.
+          </li>
+        </ul>
+        <p>
+          Partindo deste cenário, a inovação proposta pela Tokens Federais é construir um FII on-chain, utilizando Blockchain para o registro do patrimônio e
+          venda das cotas dando confiabilidade, rastreabilidade e transparência desde o registro do imóvel até a movimentação de cotas pelos investidores. Os
+          benefícios de um FII on-chain são:
+        </p>
+        <ul>
+          <li>Auditabilidade pela União, BACEN, CGU, CVM e TCU;</li>
+          <li>Rastreabilidade da escrituração de todas as operações;</li>
+          <li>Publicidade de todos os atos e fácil pesquisa pelos investidores;</li>
+          <li>Agilidade na transação dos ativos.</li>
+        </ul>
+        <p>
+          E por que usar a rede blockchain Celo? Conforme art. 170 da Constituição Federal é competência da União a defesa do meio ambiente, inclusive mediante
+          tratamento diferenciado conforme o impacto ambiental dos produtos e serviços e de seus processos de elaboração e prestação. Pensando nisso, a
+          utilização da rede Celo, uma rede ecologicamente correta e neutra em carbono, contempla o compromisso constitucional da União de implementar ações que
+          favoreçam tanto a ordem econômica quanto a proteção do meio ambiente.
+        </p>
       </div>
-
+      <h3>Smart Contracts</h3>
       <div>
+        <p>
+          Abaixo estão os links e os endereço dos Smart Contracts criados e utilizados neste hackathon. Por favor, acesse-os para verificar os registros de
+          testes e iremos utilizá-los para demonstrar as operações:
+        </p>
         <ul>
           <li>
             <a href="https://alfajores.celoscan.io/token/0xa14567f7EFcb944ddC1E56BD1c09984c2F675bB8" target="_blank">
@@ -53,7 +116,27 @@
           </li>
         </ul>
       </div>
+      <h3>Tecnologias utilizadas</h3>
+      <div>
+        <p>Para a produção deste projeto foram utilizadas as seguintes linguagens de programação:</p>
+        <ul>
+          <li>Solidity</li>
+          <li>JavaScript</li>
+        </ul>
+        <p>
+          Foram seguidas as recomendações da Celo para a utilização dos frameworks de código aberto <a href="https://docs.openzeppelin.com/">Openzeppelin</a> e
+          <a href="https://hardhat.org/">HardHat</a>.
+        </p>
+        <p>Os contratos e transações foram realizadas na rede blockchain de teste <strong>Alfajores</strong></p>
+        <p>Para conexão com a rede blockchain foi utilizado o endpoint do serviço <i>Forno</i> provido pela Celo Foundation.</p>
+      </div>
+      <h3>Licença</h3>
+      <div>Os artefatos produzidos para este projeto estão licenciados sob a licença <a href="https://opensource.org/licenses/MIT">MIT</a>.</div>
     </div>
+    <hr />
+    <footer>
+      <div>Vincit omnia veritas</div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
