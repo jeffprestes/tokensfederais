@@ -38,8 +38,8 @@
       ]
     },
     "/Users/jeffprestes/projetos/go/src/github.com/jeffprestes/tokensfederais/contracts/fundospuppp.sol": {
-      "lastModificationDate": 1670421299227,
-      "contentHash": "ba0c834164e6e26449f205da794e32b3",
+      "lastModificationDate": 1670551474097,
+      "contentHash": "fbe00b06e8fc5aafc3b5566569816a8e",
       "sourceName": "contracts/fundospuppp.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -68,6 +68,7 @@
       "imports": [
         "@openzeppelin/contracts/token/ERC20/ERC20.sol",
         "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+        "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
         "@openzeppelin/contracts/security/Pausable.sol",
         "@openzeppelin/contracts/access/Ownable.sol",
         "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol"
@@ -913,8 +914,8 @@
       ]
     },
     "/Users/jeffprestes/projetos/go/src/github.com/jeffprestes/tokensfederais/contracts/imovelrfb.sol": {
-      "lastModificationDate": 1670450369610,
-      "contentHash": "6bee901e89a0efc905c59cc38ed41965",
+      "lastModificationDate": 1670550500162,
+      "contentHash": "1a0a2805e0416d779840019fba48a413",
       "sourceName": "contracts/imovelrfb.sol",
       "solcConfig": {
         "version": "0.8.17",

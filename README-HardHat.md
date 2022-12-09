@@ -12,5 +12,6 @@ npx hardhat node
 npx hardhat run scripts/deploy.js
 
 npx hardhat run scripts/deploy-fundo.js --network alfajores
-npx hardhat verify 0x9FD8D0b3B10E3D80a0F95e9Db122ba4316D70A81 --contract contracts/fundospuppp_flat.sol:FundoSPUPPP --network alfajores
+npx hardhat verify 0xa14567f7EFcb944ddC1E56BD1c09984c2F675bB8 --contract contracts/fundospuppp.sol:FundoSPUPPP --network alfajores &&
+npx hardhat verify 0xf9Ef7d659e96Eb769bB9d02C0B1C0552f7Bf9B6f --contract contracts/imovelrfb.sol:ImoveisRFB --network alfajores
 ```

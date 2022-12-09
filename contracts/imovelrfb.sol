@@ -17,17 +17,17 @@ contract ImoveisRFB is
 {
     using Counters for Counters.Counter;
 
-    Counters.Counter private _tokenIdCounter;
+    Counters.Counter public _tokenIdCounter;
 
-    constructor() ERC721("ImoveisRFB", "IRFB") {}
+    constructor() ERC721("ImoveisRFB", "IRFB") {  }
 
     function _baseURI() internal pure override returns (string memory) {
         return "https://jeffprestes.github.io/tokensfederais/nft/";
     }
 
     function safeMint(address to, string memory uri) public onlyOwner {
-        uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
+        uint256 tokenId = _tokenIdCounter.current();
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
     }
