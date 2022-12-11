@@ -95,7 +95,7 @@
         </div>
       </header>
       <br />
-      <h3>Motivação e Proposta</h3>
+      <h3>Motivação</h3>
       <div>
         <p>
           A Secretaria do Patrimônio da União administra hoje mais de 700 mil imóveis por todo o Brasil. Parte desses imóveis são bens dominicais, passíveis de
@@ -112,13 +112,6 @@
           volume de venda dos imóveis ao particular é historicamente baixo e 90% dos leilões de imóveis da União são frustrados por motivos como burocracia ou
           laudos de avaliação errados.
         </p>
-        <p>
-          Pensando nisso, a Tokens Federais propõe a tokenização dos imóveis alienáveis da União e a criação de um fundo de investimento imobiliário federal,
-          visando destravar/otimizar a monetização desse patrimônio aumentando sua liquidez de forma ágil, transparente e sustentável.
-        </p>
-        <div>
-          <img src="fluxo-tokens-federais.png" alt="Fluxograma da solução do projeto Tokens Federais" srcset="" />
-        </div>
         <p>
           Hoje, muito do esforço para a criação de um fundo imobiliário federal já foi feito por meio do projeto "<strong
             ><a href="https://www.gov.br/economia/pt-br/acesso-a-informacao/acoes-e-programas/incorpora-brasil/incorpora-brasil">Incorpora Brasil</a></strong
@@ -140,6 +133,9 @@
             da MP 915/19) que previu a possibilidade de constituição de fundos de investimento imobiliário e contratação de seus gestores e administradores.
           </li>
         </ul>
+      </div>
+      <h3>Proposta</h3>
+      <div>
         <p>
           Partindo deste cenário, a inovação proposta pela Tokens Federais é construir um FII on-chain, utilizando Blockchain para o registro do patrimônio e
           venda das cotas dando confiabilidade, rastreabilidade e transparência desde o registro do imóvel até a movimentação de cotas pelos investidores. Os
@@ -156,6 +152,43 @@
           tratamento diferenciado conforme o impacto ambiental dos produtos e serviços e de seus processos de elaboração e prestação. Pensando nisso, a
           utilização da rede Celo, uma rede ecologicamente correta e neutra em carbono, contempla o compromisso constitucional da União de implementar ações que
           favoreçam tanto a ordem econômica quanto a proteção do meio ambiente.
+        </p>
+      </div>
+      <h3>Funcionamento</h3>
+      <div>
+        <div>
+          <img src="fluxo-tokens-federais.png" alt="Fluxograma da solução do projeto Tokens Federais" srcset="" />
+        </div>
+        <p>
+          A Secretaria de Patrimonio da União tokenizará os imóveis da União por meio de NFTs - seguindo o padrão ERC-721. O Smart Contract utilizado será o
+          <span class="strong-pontilhado">Registro dos Imoveis da União em NFT - "ImoveisRFB"</span> citado abaixo. Inicialmente, o NFT ficará em posse da União
+          e após um contrato de cessão o Fundo de Investimento Imobiliário - aqui regido por um Smart Contract - receberá os tokens dos imóveis escolhidos para
+          essa finalidade.
+        </p>
+        <p>
+          O Fundo é gerenciado pelo Smart Contract <span class="strong-pontilhado">Fundo SPU - PPP</span> citado abaixo. Notem que a ferramenta Celoscan exibe
+          que ele possui três tokens “ImoveisRFB”. Ou seja, o patrimônio deste fundo é a cessão de direitos e/ou créditos oriundos de locação, venda ou direito
+          de superfície de 03 imóveis da União que constam da base de dados da SPU.
+        </p>
+        <p>
+          Este fundo emitiu tokens que representam as cotas que um investidor adquiriu por acreditar na rentabilidade que o Fundo dará ao distribuir o
+          dividendos/rendimentos sobre os imóveis da União mantidos pelo Fundo.
+        </p>
+        <p>
+          Vale lembrar que a qualquer tempo, os investidores poderão acessar o Smart Contract
+          <span class="strong-pontilhado">Registro dos Imoveis da União em NFT ou "ImoveisRFB"</span> via Celoscan e verificar os recebedores dos tokens dos
+          imóveis tokenizados e cedidos. Para este hackathon enviamos os três para o contrato Fundo SPU - PPP .
+        </p>
+        <p>
+          Ressalta-se, ainda, que nos metadados de cada NFT consta o nº RIP de cada imóvel. O nº RIP é um número único dado pela própria SPU e é uma espécie de
+          identificador do bem no sistema https://imoveisfederais.planejamento.gov.br/
+        </p>
+      </div>
+      <h3>Operação</h3>
+      <div>
+        <p>
+          A operação dos Smart Contracts para tokenização dos tokens de imóveis, geração dos tokens do fundos e respectivas transferências são realizadas na
+          ferramenta Celoscan tendo a carteira Metamask conectada a esta ferramenta.
         </p>
       </div>
       <h3>Smart Contracts</h3>
@@ -177,30 +210,6 @@
           </li>
         </ul>
       </div>
-      <h3>Funcionamento</h3>
-      <div>
-        <p>
-          A Secretaria de Patrimonio da União tokenizará os imóveis da União em forma de NFTs - seguindo o padrão ERC-721. O Smart Contract utilizado será o
-          <span class="strong-pontilhado">Registro dos Imoveis da União em NFT ou "ImoveisRFB"</span> citado acima. Inicialmente o NFT ficará em posse da União
-          e após um contrato de cessão o Fundo - aqui regido por um Smart Contract - receberá os tokens dos imóveis definidos no contrato de cessão.
-        </p>
-        <p>
-          O Fundo é gerenciado pelo Smart Contract <span class="strong-pontilhado">Fundo SPU - PPP</span> citado acima. Notem que a ferramenta Celoscan exibe
-          que ele possui três tokens “ImoveisRFB”. Ou seja, o patrimônio deste fundo é a cessão de direitos e/ou créditos oriundos de locação, venda ou direito
-          de superfície de 03 imóveis da União que constam da base de dados da SPU.
-        </p>
-        <p>
-          Este fundo emitiu tokens que representam as cotas que um investidor adquiriu por acreditar na rentabilidade que o fundo dará ao pagar o
-          dividendos/rendimentos sobre os imóveis da União mantidos pelo Fundo.
-        </p>
-        <p>
-          Vale lembrar que a qualquer tempo, os investidores poderão acessar o Smart Contract
-          <span class="strong-pontilhado">Registro dos Imoveis da União em NFT ou "ImoveisRFB"</span> via Celoscan e verificar os recebedores dos tokens dos
-          imóveis tokenizados e cedidos. Para este hackathon enviamos os três para o contrato Fundo SPU - PPP . Vejam também os metadados de cada NFT. Esses
-          metadados, seguindo o padrão ERC-721, mostram os detalhes do NFT, neste caso dados que constam no sistema da SPU para controle de imóveis, por exemplo
-          o numero RIP.
-        </p>
-      </div>
       <h3>Tecnologias utilizadas</h3>
       <div>
         <p>Para a produção deste projeto foram utilizadas as seguintes linguagens de programação:</p>
@@ -214,6 +223,7 @@
         </p>
         <p>Os contratos e transações foram realizadas na rede blockchain de teste <strong>Alfajores</strong></p>
         <p>Para conexão com a rede blockchain foi utilizado o endpoint do serviço <i>Forno</i> provido pela Celo Foundation.</p>
+        <p>Para armazenamento dos metadados foi utilizado a tecnologia IPFS através do serviço Pinata.</p>
       </div>
       <h3>Licença</h3>
       <div>Os artefatos produzidos para este projeto estão licenciados sob a licença <a href="https://opensource.org/licenses/MIT">MIT</a>.</div>
